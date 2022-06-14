@@ -22,8 +22,22 @@ public class StudentManager {
     }
 
     public void add() {
-        System.out.println("Nhập id:");
-        int id = Integer.parseInt(scanner.nextLine());
+        boolean flag;
+        int id;
+        do {
+            flag = false;
+            System.out.println("Nhập id");
+            id = Integer.parseInt(scanner.nextLine());
+            for (int i = 0; i < students.length; i++) {
+                if (students[i] != null){
+                    if (students[i].getId() == id) {
+                        System.out.println("Id bị trùng");
+                        flag = true;
+                        break;
+                    }
+                }
+            }
+        }while (flag);
         System.out.println("Nhập tên:");
         String name = scanner.nextLine();
         System.out.println("Nhập địa chỉ:");

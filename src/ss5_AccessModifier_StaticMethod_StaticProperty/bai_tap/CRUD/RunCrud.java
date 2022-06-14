@@ -53,6 +53,8 @@ public class RunCrud {
                     int id = Integer.parseInt(scanner.nextLine());
                     studentManager.search(id);
                     break;
+                case 6:
+                    System.exit(6);
                 default:
                     flag=false;
             }
