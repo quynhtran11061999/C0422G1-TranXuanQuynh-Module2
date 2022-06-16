@@ -1,6 +1,8 @@
 package ss6_ke_thua.thuc_hanh;
 
-public class Shape {
+import ss7_AbstractClass_Interface.bai_tap.Resizeable.Resizeable;
+
+public abstract class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
 
@@ -28,6 +30,7 @@ public class Shape {
         this.filled = filled;
     }
 
+    public abstract double getArea();
     @Override
     public String toString() {
         return "A Shape with color of xxx and filled/not filled" +

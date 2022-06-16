@@ -1,19 +1,18 @@
-package ss6_ke_thua.bai_tap.Circle_Cylinder;
+package ss7_AbstractClass_Interface.bai_tap.Resizeable;
 
-public class Circle {
+import ss6_ke_thua.thuc_hanh.Shape;
+
+public class Circle extends Shape implements Resizeable {
     private double radius;
     private String color;
-
-    public Circle() {
+    public Circle(){
     }
-
-    public Circle(double radius) {
+    public Circle(double radius){
         this.radius = radius;
     }
-
-    public Circle(double radius, String color) {
+    public Circle(double radius, String color){
         this.radius = radius;
-        this.color = color;
+        this.color =color;
     }
 
     public double getRadius() {
@@ -31,17 +30,20 @@ public class Circle {
     public void setColor(String color) {
         this.color = color;
     }
-
     public double getArea() {
-        return (this.radius * this.radius) * Math.PI;
+        return (this.radius*this.radius)*Math.PI;
     }
-
     @Override
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
                 ", color='" + color + '\'' +
-                '}' +
-                "Area= " + getArea();
+                '}';
+    }
+
+
+    @Override
+    public void resize(double percent) {
+        radius += radius * percent;
     }
 }

@@ -1,12 +1,9 @@
 package ss6_ke_thua.thuc_hanh;
 
-public class ShapeTest {
-    public static void main(String[] args) {
-        Shape shape = new Shape();
-        System.out.println(shape);
+import ss7_AbstractClass_Interface.bai_tap.Resizeable.Resizeable;
 
-        shape = new Shape("red", false);
-        System.out.println(shape);
+public abstract class ShapeTest implements Resizeable {
+    public static void main(String[] args) {
 
         Circle circle = new Circle();
         System.out.println(circle);
