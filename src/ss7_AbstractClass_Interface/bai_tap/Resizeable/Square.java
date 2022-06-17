@@ -1,6 +1,6 @@
 package ss7_AbstractClass_Interface.bai_tap.Resizeable;
 
-    public class Square extends Rectangle implements Resizeable{
+    public class Square extends Rectangle implements Resizeable, Colorable{
         public Square() {
         }
 
@@ -23,7 +23,10 @@ package ss7_AbstractClass_Interface.bai_tap.Resizeable;
         public double getAreaside(){
             return this.getSide()*2;
         }
-
+        @Override
+        public void howToColor() {
+            System.out.println("Color all four sides");
+        }
         @Override
         public String toString() {
             return "A Square with side="

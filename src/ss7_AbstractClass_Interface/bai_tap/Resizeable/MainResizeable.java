@@ -26,6 +26,11 @@ public class MainResizeable {
         shapes[2].resize(percent);
         System.out.println("Diện tích square sau resize");
         System.out.println(shapes[2].getArea());
-
+        for (int i = 0; i < shapes.length; i++) {
+            System.out.println("Hình " + (i + 1) +" diện tích là: " + shapes[0].getArea());
+            if(shapes[i] instanceof Colorable) {
+                ((Square) shapes[i]).howToColor();
+            }
+        }
     }
 }
