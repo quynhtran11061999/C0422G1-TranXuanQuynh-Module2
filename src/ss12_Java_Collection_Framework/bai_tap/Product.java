@@ -2,14 +2,15 @@ package ss12_Java_Collection_Framework.bai_tap;
 
 import ss7_AbstractClass_Interface.bai_tap.Resizeable.Colorable;
 
-public class Product implements Comparable<Product>{
+public class Product {
     private int id;
     private String name;
     private int price;
 
-    public Product(){
+    public Product() {
     }
-    public Product(int id, String name, int price){
+
+    public Product(int id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -48,9 +49,8 @@ public class Product implements Comparable<Product>{
                 '}';
     }
 
-    @Override
-    public int compareTo(Product o) {
-        return this.getPrice() - o.getPrice();
-    }
-
+//    @Override
+//    public int compareTo(Product o) {
+//        return this.getPrice() - o.getPrice();
+//    }
 }

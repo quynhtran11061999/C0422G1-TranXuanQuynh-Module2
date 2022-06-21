@@ -58,7 +58,7 @@ public class MainProduct {
                 case 8:
                     System.exit(8);
                 default:
-                    flag=false;
+                    flag = false;
             }
         } while (flag);
     }

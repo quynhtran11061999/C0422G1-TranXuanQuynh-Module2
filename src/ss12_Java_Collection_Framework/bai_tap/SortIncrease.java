@@ -2,10 +2,9 @@ package ss12_Java_Collection_Framework.bai_tap;
 
 import java.util.Comparator;
 
-public class SortDescending implements Comparator<Product> {
-
+public class SortIncrease implements Comparator<Product> {
     @Override
     public int compare(Product o1, Product o2) {
-        return o2.getPrice() - o1.getPrice();
+        return o1.getPrice() - o2.getPrice();
     }
 }
