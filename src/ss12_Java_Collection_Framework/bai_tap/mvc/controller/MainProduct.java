@@ -1,6 +1,6 @@
-package ss12_Java_Collection_Framework.bai_tap;
+package ss12_Java_Collection_Framework.bai_tap.mvc.controller;
 
-import ss5_AccessModifier_StaticMethod_StaticProperty.bai_tap.CRUD.StudentManager;
+import ss12_Java_Collection_Framework.bai_tap.mvc.service.implement.ProductManager;
 
 import java.util.Scanner;
 

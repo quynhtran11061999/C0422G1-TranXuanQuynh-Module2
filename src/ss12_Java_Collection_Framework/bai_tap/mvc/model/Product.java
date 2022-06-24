@@ -1,4 +1,4 @@
-package ss12_Java_Collection_Framework.bai_tap;
+package ss12_Java_Collection_Framework.bai_tap.mvc.model;
 
 import ss7_AbstractClass_Interface.bai_tap.Resizeable.Colorable;
 
