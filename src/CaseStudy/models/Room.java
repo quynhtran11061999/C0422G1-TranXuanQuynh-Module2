@@ -1,4 +1,4 @@
-package CaseStudy.model;
+package CaseStudy.models;
 
 public class Room extends Facility{
 }

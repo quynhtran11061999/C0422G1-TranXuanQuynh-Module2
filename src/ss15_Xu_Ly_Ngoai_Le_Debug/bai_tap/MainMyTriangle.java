@@ -17,9 +17,8 @@ public class MainMyTriangle {
             myTriangle.check(a, b, c);
         } catch (IllegalTriangleException e) {
             e.printStackTrace();
-        }
-        System.out.println(myTriangle);
+            System.out.println(myTriangle);
 
+        }
     }
 }
-
